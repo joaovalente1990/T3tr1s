@@ -1,3 +1,3 @@
 # Tetris_Frontend_Vue
 
-Project creation.
+Added the folder with the assets and created the routes file.
