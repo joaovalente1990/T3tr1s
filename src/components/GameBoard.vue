@@ -52,9 +52,9 @@ export default {
 
 <style scoped>
 
-*{
+/**{
   outline: solid 0.15rem rgba(18, 243, 37, 0.5);
-} 
+} */
 
 canvas {
     background-color: black;

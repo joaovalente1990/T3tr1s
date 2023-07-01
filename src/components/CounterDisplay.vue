@@ -42,7 +42,7 @@ export default {
 
 .header{
     background-color: #0080ff;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 p{
