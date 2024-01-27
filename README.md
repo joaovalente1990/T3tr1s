@@ -2,4 +2,4 @@
 
 Added the folder with the assets and created the routes file.
 
-![Alt text](image.png)
+<img src="https://raw.githubusercontent.com/joaovalente1990/Tetris_Frontend_Vue/tree/TetrisVue3/src/assets/images/gui.png">
