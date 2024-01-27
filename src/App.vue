@@ -20,4 +20,10 @@
     color: #2c3e50;
     margin-top: 60px;
   }
+
+  @media (max-width: 600px) { 
+      body { 
+        resize: none !important;; 
+      } 
+} 
   </style>
