@@ -1,0 +1,7 @@
+node_modules
+dist
+server.cert
+server.key
+nodemon.json
+
+src/.env

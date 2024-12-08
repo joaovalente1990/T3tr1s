@@ -1,0 +1,16 @@
+[package]
+name = "Tetris_Backend_Rust_Postgres"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.4.11" }
+rocket_contrib = {version = "0.4.10", default-features = false, features = ["json"]}
+rocket_sync_db_pools = { version = "0.1.0-rc.3", features = ["diesel_postgres_pool"] }
+serde = {version = "1.0.164"}
+serde_json = {version = "1.0.97"}
+chrono = { version = "0.4.6" }
+diesel = { version = "2.1.0", features = ["postgres"] }
+rand= {version = "0.8.5"}

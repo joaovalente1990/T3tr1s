@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=tetris_rust_db
+    command: ["postgres", "-c", "log_statement=all"]
+
+  app:
+    build: 
+      context: ../
+      dockerfile: ./docker/Dockerfile
+    environment:
+      - DATABASE_URL=postgres://postgres:postgres@postgres/tetris_rust_db
+      - ROCKET_DATABASES={postgres={url=postgres://postgres:postgres@postgres/tetris_rust_db}}
+    ports:
+      - 8000:8000
+    volumes:
+      - ../api/:/app
